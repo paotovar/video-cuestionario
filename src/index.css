@@ -1,0 +1,104 @@
+:root {
+  /* --color-primary: #f18e5c; */
+  --color-primary: #ED4040; 
+  --color-secondary: #898989 ;
+  --color-success: #539165;
+  --color-gray: #EDEDEE;
+  --color-danger : #ff0505;
+  --color-black : #333333;
+  --color-black-p : #070707;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  width: 98vw;
+  height: 100vh;
+}
+
+#root {
+  width: 100%;
+  min-height: 95vh;
+  overflow-x: hidden;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+.btn {
+  padding: 8px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: var(--color-primary);
+  text-transform: uppercase;
+  font-weight: bold;
+  width: fit-content;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.btn-disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  background-color: var(--color-danger);
+  color: white;
+}
+
+.btn-secondary {
+  background-color: var(--color-secondary);
+  color: white;
+}
+
+.btn-success {
+  background-color: var(--color-success);
+  color: white;
+}
+
+.btn-black{
+  background-color: var(--color-black);
+  color: white;
+}
+
+.container-carousel .react-multiple-carousel__arrow--right,
+.container-carousel .react-multiple-carousel__arrow--left {
+  background-color: var(--color-primary);
+}
+
+.container-carousel .react-multiple-carousel__arrow--right {
+  right: 0;
+}
+
+.container-carousel .react-multiple-carousel__arrow--right:hover {
+  background-color: var(--color-gray);
+}
+
+.container-carousel .react-multiple-carousel__arrow--left {
+  left: 0;
+}
+
+.container-carousel  .react-multiple-carousel__arrow--left:hover {
+  background-color: var(--color-gray);
+}
+
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 768px) {
+  .btn {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+}
